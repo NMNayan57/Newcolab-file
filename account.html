@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, inatial-scale=1.0">
+    <title>cart-Closed </title>
+    <link rel="stylesheet" href="styel.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    
+         <div class="topnav" id="myTopnav">
+            <a href="index.html" >Home</a>
+            <a href="Services.html">Services</a>
+            <a href="products.html">products</a>
+           <a href="login.php">Sing in</a>
+           <a href="about.html">About</a>
+             <a href="cart.html"><img src="images/cart.png" width="50px" height="50px" style="margin-left:  -10px; "></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    
+    <!----------------------------------end headder-->
+
+
+<!--account page-------------->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="photos/bg23.png" alt="">
+            </div>
+               <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="Indicator">
+                    </div>
+                    <form id="LoginForm" >
+                        <input type="text" placeholder="username">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Forgot password</a>
+                    </form >
+                     <form id="RegForm" >
+                        <input type="text" placeholder="username">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn">Register</button>
+                        
+                    </form>
+                    
+                    
+                </div>
+            </div>
+                
+            
+        </div>
+    </div>
+</div>
+
+
+
+    <!--   ------------footer------------>
+
+   <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class=" footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p> Download Our App For Android And ios Mobiel phone</p>
+                    <div class="app-logo">
+                        <img src="photos/play2.png">
+                        <img src="photos/app2.png">
+                    </div>
+
+                </div>
+                <div class=" footer-col-2">
+                    <img src="photos/bh.png" alt="">
+                    <p> our pourpose id subtion of no but we cabn fue dfw ok damm so many items</p>
+
+                </div>
+                <div class=" footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li > <a href="Services.html" style="text-decoration: none; color:gray">Deleviry</a></li>
+                      <li> <a href="Services.html" style="text-decoration: none; color:gray">Pay method</a></li>
+                       <li> <a href="Services.html" style="text-decoration: none; color:gray">Report</a></li>
+                        <li> <a href="Services.html" style="text-decoration: none; color:gray">Return policy</a></li>
+                    </ul>
+
+                </div>
+                <div class=" footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                       <li><a href="https://www.facebook.com/profile.php?id=100015827795246">
+                            <i class="fa fa-facebook"></i></a> </li>
+                        <li><a href="https://www.linkedin.com/in/sm-noyan-8475211b9/">
+                            <i class="fa fa-linkedin"></i></a> </li>
+                        
+                        <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href=https://www.instagram.com/sm_noyan/><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"> Copyright 2020 - Noyan</p>
+        </div>
+    </div>
+
+
+
+    <!--   java-->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+        
+         var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+      
+     function register(){
+         RegForm.style.textTransform="translatex(0px)";
+         LoginFormForm.style.textTransform="translatex(0px)";
+         Indicator.style.textTransform="translatex(100px)";
+         
+     }
+    
+    function login(){
+         RegForm.style.textTransform="translatex(300px)";
+         LoginFormForm.style.textTransform="translatex(300px)"; Indicator.style.textTransform="translatex(0px)";
+         
+     }
+
+    </script>
+    
+<!--  --------------------  js for toggle form-->
+
+
+
+
+
+
+
+
+</body>
+
+</html>
